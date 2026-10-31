@@ -1,3 +1,4 @@
+
 ## Changelog - Part 3 Implementation
 
 ### Feedback Corrections from Part 2
@@ -13,3 +14,6 @@
   * Created `robots.txt` and `sitemap.xml` files.
 * **Deployment:** Deployed live build onto Netlify.
 *
+=======
+I changed the background color and font also added animation
+
