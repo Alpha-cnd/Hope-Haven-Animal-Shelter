@@ -1,37 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Hope Haven Animal Shelter in Johannesburg. Get in touch for rescue inquiries, donations, or general questions.">
+    <meta name="keywords" content="animal shelter, contact, Johannesburg, rescue animals, adopt pets">
+    <title>Contact Us | Hope Haven Animal Shelter</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
-<link rel="stylesheet" href="CSS/styles.css">
 <body>
     <header>
         <nav>
-            <img src="IMAGES/logo.jpg" style="width: 75px; height: 85px;">
-            <a href="home.html">Homepage |</a>
-             <a href="about.html">About Us |</a>
-              <a href="services.html">Services |</a>
-               <a href="gallery.html">Gallery |</a>
-                <a href="contact.html">Contact Us |</a>
+            <img src="IMAGES/logo.jpg" style="width: 75px; height: 85px;" alt="Hope Haven Animal Shelter Logo">
+            <a href="home.html">Homepage</a> |
+            <a href="about.html">About Us</a> |
+            <a href="services.html">Services</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main>
 
-<div style="background-color: #36454F ;">
-        <span style="color: #FFF8E7;">
+    <main style="background-color: #36454F; color: #FFF8E7; padding: 20px;">
+        <h1>Contact Hope Haven Animal Shelter</h1>
+        
+        <!-- Contact Details -->
+        <section class="contact-info">
+            <h2>Our Location & Details</h2>
+            <p><strong>Address:</strong> 123 Rescue Road, Johannesburg, 2192</p>
+            <p><strong>Tel:</strong> <a href="tel:0111234567" style="color: #FFF8E7;">011 123 4567</a></p>
+            <p><strong>WhatsApp:</strong> 087 564 5687</p>
+        </section>
 
-<h2><u><i>123 Rescue Road, Johannesburg, 2192 </i></u></h2>
+        <!-- Interactive Map (Leaflet.js) -->
+        <section class="map-section" style="margin: 20px 0;">
+            <h2>Find Us Here</h2>
+            
 
- <h2><u><i>Tel: 011 123 4567</i></u></h2>
+<div class="map-container">
+    <iframe
+        src="https://www.google.com/maps?q=123+Rescue+Road,+Johannesburg,+2192&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+        </section>
 
- <h2><u><i>WhatsApp: 087 564 5687</i></u></h2>
+        <!-- General Contact Form -->
+        <section class="form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" action="https://formspree.io/f/mwllrljy" method="POST" class="custom-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                    <span class="error-msg" id="nameError"></span>
+                </div><br>
 
-<img src="IMAGES/images (12).jpg" style="width:100% ; height:850px ;">
+                <div class="form-group">
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    <span class="error-msg" id="emailError"></span>
+                </div><br>
 
-        </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (SA standard):</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="0821234567" pattern="^(\+27|0)[6-8][0-9]{8}$" required>
+                    <span class="error-msg" id="phoneError"></span>
+                </div><br>
 
-    
+                <div class="form-group">
+                    <label for="messageType">Subject / Message Type:</label><br>
+                    <select id="messageType" name="messageType" required>
+                        <option value="">-- Select Type --</option>
+                        <option value="general">General Query</option>
+                        <option value="volunteering">Volunteering</option>
+                        <option value="donation">Donations</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Type your message here..."></textarea>
+                    <span class="error-msg" id="messageError"></span>
+                </div><br>
+
+                <button type="submit" id="submitBtn">Send Message</button>
+                <div id="formStatus" style="margin-top: 15px; font-weight: bold;"></div>
+            </form>
+        </section>
     </main>
-    <footer>&copy;ST10513428#Home_Haven_Animal_Shelter</footer>
+
+    <footer>
+        &copy; ST10513428 #Home_Haven_Animal_Shelter
+    </footer>
+
+    <!-- Leaflet JS for Map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: Sitemap: https://hope-haven-shelter.netlify.app/sitemap.xml

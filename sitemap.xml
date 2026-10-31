@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>file:///C:/Users/VMAPHALU/OneDrive/Desktop/Hope%20Haven%20Animal%20Shelter/home.html</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>file:///C:/Users/VMAPHALU/OneDrive/Desktop/Hope%20Haven%20Animal%20Shelter/about.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>file:///C:/Users/VMAPHALU/OneDrive/Desktop/Hope%20Haven%20Animal%20Shelter/services.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>file:///C:/Users/VMAPHALU/OneDrive/Desktop/Hope%20Haven%20Animal%20Shelter/gallery.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>file:///C:/Users/VMAPHALU/OneDrive/Desktop/Hope%20Haven%20Animal%20Shelter/contact.html</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>
